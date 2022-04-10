@@ -9,26 +9,26 @@ import org.springframework.web.bind.annotation.RestController;
 public class StatusCodeController {
 
 
-    //get mapping of 100 status code
-    @GetMapping("/100")
-    @ResponseStatus(HttpStatus.CONTINUE)
-    public String get100StatusCode(){
-        return HttpStatus.CONTINUE.toString();
-    }
-
-    //get mapping of 101 status code
-    @GetMapping("/101")
-    @ResponseStatus(HttpStatus.SWITCHING_PROTOCOLS)
-    public String get101StatusCode(){
-        return HttpStatus.SWITCHING_PROTOCOLS.toString();
-    }
-
-    //get mapping of 102 status code
-    @GetMapping("/102")
-    @ResponseStatus(HttpStatus.PROCESSING)
-    public String get102StatusCode(){
-        return HttpStatus.PROCESSING.toString();
-    }
+//    //get mapping of 100 status code
+//    @GetMapping("/100")
+//    @ResponseStatus(HttpStatus.CONTINUE)
+//    public String get100StatusCode(){
+//        return HttpStatus.CONTINUE.toString();
+//    }
+//
+//    //get mapping of 101 status code
+//    @GetMapping("/101")
+//    @ResponseStatus(HttpStatus.SWITCHING_PROTOCOLS)
+//    public String get101StatusCode(){
+//        return HttpStatus.SWITCHING_PROTOCOLS.toString();
+//    }
+//
+//    //get mapping of 102 status code
+//    @GetMapping("/102")
+//    @ResponseStatus(HttpStatus.PROCESSING)
+//    public String get102StatusCode(){
+//        return HttpStatus.PROCESSING.toString();
+//    }
 
 
 
@@ -64,7 +64,8 @@ public class StatusCodeController {
     @GetMapping("/204")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public String get204StatusCode(){
-        return HttpStatus.NO_CONTENT.toString();
+        return "204 NO_CONTENT";
+        //return HttpStatus.NO_CONTENT.toString();
     }
 
     //get mapping of 205 status code
